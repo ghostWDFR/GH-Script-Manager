@@ -8,7 +8,7 @@ Scripts can be created in the main scripts folder or inside custom groups for be
 
 <br>
 
-![Create Script](/images/Create_Script.png)
+![Create Script](images/Create_Script.png)
 
 **Create New Script Section**
 

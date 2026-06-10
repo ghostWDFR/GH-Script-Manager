@@ -8,7 +8,7 @@ This makes it easy to build personal tools, utilities, and workflow automation s
 
 <br>
 
-![Run Script](/images/Save_and_Edit.png)
+![Run Script](images/Save_and_Edit.png)
 
 **Run Script Section**
 

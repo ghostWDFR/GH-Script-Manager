@@ -13,7 +13,7 @@ You can use it to configure:
 
 <br>
 
-![Settings](/images/Settings.png)
+![Settings](images/Settings.png)
 
 **Settings Panel**
 

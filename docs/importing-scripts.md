@@ -13,7 +13,7 @@ This is useful when:
 
 <br>
 
-![Import Script](/images/Create_Script.png)
+![Import Script](images/Create_Script.png)
 
 **Import Script Dialog**
 

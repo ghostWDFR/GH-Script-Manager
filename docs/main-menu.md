@@ -12,7 +12,7 @@ The add-on provides a centralized environment for managing, editing, organizing,
 
 <br>
 
-![Main Menu](/images/GH_Script_Manager_Main.png)
+![Main Menu](images/GH_Script_Manager_Main.png)
 
 **GH Script Manager Main Panel**
 

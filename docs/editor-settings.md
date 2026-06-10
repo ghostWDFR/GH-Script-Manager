@@ -13,7 +13,7 @@ You can use it to:
 
 <br>
 
-![Editor Settings](/images/Settings.png)
+![Editor Settings](images/Settings.png)
 
 **Editor Settings Panel**
 
