@@ -1,0 +1,1030 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for GH Script Manager Blender Add-on">
+      
+      
+        <meta name="author" content="ghostWDFR">
+      
+      
+      
+        <link rel="prev" href="../main-menu/">
+      
+      
+        <link rel="next" href="../creating-scripts/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Settings - GH Script Manager</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GH Script Manager" class="md-header__button md-logo" aria-label="GH Script Manager" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GH Script Manager
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../main-menu/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Main Menu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Settings
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../creating-scripts/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Creating Scripts
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../importing-scripts/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Importing Scripts
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../running-scripts/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Running Scripts
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../editor-settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Editor Settings
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GH Script Manager" class="md-nav__button md-logo" aria-label="GH Script Manager" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    GH Script Manager
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Menu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripts Folder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripts Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Path Field
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-custom-text-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Custom Text Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-editor-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Editor Path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Persistence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-setup-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Setup Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Creating Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../importing-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importing Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../running-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running Scripts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Editor Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripts Folder
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripts Folder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Path Field
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Folder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reset-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-custom-text-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Custom Text Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-editor-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Editor Path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Persistence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-setup-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Setup Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h1>
+<hr />
+<p>The <strong>Settings</strong> section contains all configuration options for the add-on.</p>
+<p>You can use it to configure:</p>
+<ul>
+<li>Scripts folder location</li>
+<li>External text editor</li>
+<li>Default script storage location</li>
+<li>Quick access to the scripts folder</li>
+</ul>
+<p><br></p>
+<p><img alt="Settings" src="/images/Settings.png" /></p>
+<p><strong>Settings Panel</strong></p>
+<hr />
+<h2 id="scripts-folder">Scripts Folder<a class="headerlink" href="#scripts-folder" title="Permanent link">&para;</a></h2>
+<p>The add-on stores all managed Python scripts inside a dedicated scripts directory.</p>
+<p>The current path can be changed at any time.</p>
+<h3 id="path-field">Path Field<a class="headerlink" href="#path-field" title="Permanent link">&para;</a></h3>
+<p>The <strong>Path</strong> field defines where GH Script Manager will store and search for scripts.</p>
+<p>Example:</p>
+<pre><code class="language-text">D:\BlenderScripts
+</code></pre>
+<p>or</p>
+<pre><code class="language-text">C:\Projects\MyTools
+</code></pre>
+<p>The selected folder becomes the root location for:</p>
+<ul>
+<li>Created scripts</li>
+<li>Imported scripts</li>
+<li>Script groups</li>
+<li>Folder navigation</li>
+</ul>
+<hr />
+<h2 id="open-folder">Open Folder<a class="headerlink" href="#open-folder" title="Permanent link">&para;</a></h2>
+<p>The <strong>Open Folder</strong> button opens the currently selected scripts directory using your operating system's file manager.</p>
+<p>Supported systems:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>File Explorer</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>System File Manager</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>Finder</td>
+</tr>
+</tbody>
+</table>
+<p>This allows quick access to your scripts outside Blender.</p>
+<hr />
+<h2 id="reset-path">Reset Path<a class="headerlink" href="#reset-path" title="Permanent link">&para;</a></h2>
+<p>The <strong>Reset</strong> button restores the default scripts location.</p>
+<p>Default location:</p>
+<pre><code class="language-text">Addon Folder/Scripts
+</code></pre>
+<p>or the Blender user scripts directory if the add-on cannot create a folder inside the installation directory.</p>
+<p>After resetting:</p>
+<ul>
+<li>The path is automatically saved</li>
+<li>The script list is refreshed</li>
+<li>Existing scripts remain untouched</li>
+</ul>
+<blockquote>
+<p>Only the configured path changes. No files are deleted.</p>
+</blockquote>
+<hr />
+<h2 id="editor-settings">Editor Settings<a class="headerlink" href="#editor-settings" title="Permanent link">&para;</a></h2>
+<p>The <strong>Editor Settings</strong> section controls how scripts are opened for editing.</p>
+<hr />
+<h2 id="use-custom-text-editor">Use Custom Text Editor<a class="headerlink" href="#use-custom-text-editor" title="Permanent link">&para;</a></h2>
+<p>When enabled, the add-on will use the specified external editor for opening scripts.</p>
+<p>When disabled, GH Script Manager will use the default available system editor.</p>
+<p>If no supported system editor is available, Blender's Text Editor is used as a fallback.</p>
+<p>Supported examples:</p>
+<ul>
+<li>Visual Studio Code</li>
+<li>PyCharm</li>
+<li>Notepad++</li>
+<li>Sublime Text</li>
+<li>Cursor</li>
+<li>VSCodium</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-text">C:\Program Files\Microsoft VS Code\Code.exe
+</code></pre>
+<hr />
+<h2 id="custom-editor-path">Custom Editor Path<a class="headerlink" href="#custom-editor-path" title="Permanent link">&para;</a></h2>
+<p>Specify the path to the editor executable.</p>
+<p>Example:</p>
+<pre><code class="language-text">C:\Program Files\Notepad++\notepad++.exe
+</code></pre>
+<p>or</p>
+<pre><code class="language-text">C:\Program Files\Microsoft VS Code\Code.exe
+</code></pre>
+<p>When a valid editor is configured:</p>
+<ul>
+<li>New scripts open automatically in that editor</li>
+<li>Existing scripts open in that editor when pressing <strong>Edit</strong></li>
+</ul>
+<hr />
+<h2 id="configuration-persistence">Configuration Persistence<a class="headerlink" href="#configuration-persistence" title="Permanent link">&para;</a></h2>
+<p>All settings are stored automatically and restored when Blender is restarted.</p>
+<p>Saved information includes:</p>
+<ul>
+<li>Scripts folder path</li>
+<li>Custom editor path</li>
+<li>Editor preferences</li>
+</ul>
+<p>No manual saving is required.</p>
+<hr />
+<h2 id="common-setup-example">Common Setup Example<a class="headerlink" href="#common-setup-example" title="Permanent link">&para;</a></h2>
+<p>Many users prefer the following setup:</p>
+<pre><code class="language-text">Scripts Folder:
+D:\BlenderScripts
+</code></pre>
+<pre><code class="language-text">Editor:
+Visual Studio Code
+</code></pre>
+<p>This allows scripts to be managed directly from Blender while keeping development inside a professional code editor.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
